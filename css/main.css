@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  font-family: "Montserrat", sans-serif;
+  color: #777;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.header {
+  padding: 2rem;
+  background-color: #c9efc7;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo-box img {
+  width: 16rem;
+  height: 5rem;
+}
+.header__nav a:not(:last-child) {
+  margin-right: 2.6rem;
+}
+.header__link:link, .header__link:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.header__link:hover, .header__link:active {
+  border-bottom: 2px solid #f08080;
+}
+
+.home {
+  height: 50rem;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+.home__img {
+  position: relative;
+  top: 0;
+  left: 0;
+  /*
+  red
+  red
+  red
+  continue from here 
+  add another image in the home section and create hover effects
+  red
+  red
+  red
+  */
+}
+.home__img img {
+  position: absolute;
+  height: 75%;
+  width: 45%;
+}
+.home__img-2 {
+  top: 200px;
+  left: 200px;
+}
+
+.section-home {
+  background-color: #fcf1dd;
+  padding: 2rem;
+}/*# sourceMappingURL=main.css.map */

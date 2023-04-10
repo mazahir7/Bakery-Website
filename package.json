@@ -1,0 +1,14 @@
+{
+  "name": "bakery-website",
+  "version": "1.0.0",
+  "description": "Bakery website for college project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mazahir7",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

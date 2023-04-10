@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: inherit;
+}
+
+html {
+   // changes the 1REM from 16px to 10px
+   font-size: 62.5%;
+
+   // Does NOT work on Safari
+   scroll-behavior: smooth;
+}
+
+body {
+   box-sizing: border-box;
+}

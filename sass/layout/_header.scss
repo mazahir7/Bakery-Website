@@ -1,0 +1,66 @@
+.header {
+   padding: 2rem;
+   background-color: $color-green;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   &__logo-box img {
+      width: 16rem;
+      height: 5rem;
+   }
+
+   &__nav a:not(:last-child) {
+      margin-right: 2.6rem;
+   }
+
+   &__link:link,
+   &__link:visited {
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $color-black;
+   }
+
+   &__link:hover,
+   &__link:active {
+      border-bottom: 2px solid #f08080;
+   }
+}
+
+.home {
+   height: 50rem;
+   display: grid;
+   grid-template-columns: 55fr 45fr;
+
+   &__img {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      img {
+         position: absolute;
+         height: 75%;
+         width: 45%;
+      }
+
+      &-2 {
+         top: 200px;
+         left: 200px;
+      }
+
+      /*
+      red
+      red
+      red
+      red 
+      continue from here 
+      continue from here 
+      add another image in the home section and create hover effects
+      red
+      red
+      red
+      */
+   }
+}
