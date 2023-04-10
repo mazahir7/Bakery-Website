@@ -1,10 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@400;500;700;900&display=swap");
 
 body {
    font-weight: 400;
    /* font-size: 16px; */
    line-height: 1.7;
    font-family: "Montserrat", sans-serif;
-   color: $color-grey-dark;
+   color: $color-black;
    // padding: 3rem;
+}
+
+.heading-primary {
+   font-family: cursive;
+   font-weight: 700;
+   font-size: 5rem;
+   line-height: 1.6;
+   color: $color-grey-dark3;
 }

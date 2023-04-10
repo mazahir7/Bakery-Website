@@ -34,6 +34,41 @@
    display: grid;
    grid-template-columns: 55fr 45fr;
 
+   &__main {
+      width: 85%;
+   }
+
+   &__paragraph {
+      font-weight: 500;
+      line-height: 2.2;
+      font-size: 1.6rem;
+   }
+
+   &__btn:link,
+   &__btn:visited {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: #f08080;
+      padding: 1.6rem 2.8rem;
+      border-radius: 33px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $color-brown;
+      box-shadow: 0 3px 12px #0000005e;
+      transition: all 0.3s;
+   }
+
+   &__btn:hover {
+      color: $color-coffee;
+      background-color: $color-green;
+   }
+
+   &__btn:active {
+      box-shadow: 0 3px 5px #00000054;
+      transform: translateY(3px);
+   }
+
    &__img {
       position: relative;
       top: 0;
@@ -41,26 +76,37 @@
 
       img {
          position: absolute;
-         height: 75%;
+         height: 42%;
          width: 45%;
+         border-radius: 3px;
+         box-shadow: 0 1px 23px rgba($color-coffee, 0.7);
+         transition: all 0.3s;
+         outline-offset: 2rem;
+
+         &:hover {
+            z-index: 999;
+            transform: scale(1.05) translateY(-0.5rem);
+         }
+      }
+
+      &-1 {
+         top: 20rem;
+         left: 16rem;
+         z-index: 3;
       }
 
       &-2 {
-         top: 200px;
-         left: 200px;
+         top: 10rem;
+         left: 30rem;
       }
 
-      /*
-      red
-      red
-      red
-      red 
-      continue from here 
-      continue from here 
-      add another image in the home section and create hover effects
-      red
-      red
-      red
-      */
+      &-3 {
+         top: 10rem;
+         left: 0;
+      }
+   }
+
+   &__container:hover img:not(:hover) {
+      transform: scale(0.95);
    }
 }
