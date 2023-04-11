@@ -1,0 +1,46 @@
+.about {
+   display: grid;
+   grid-template-columns: 55fr 45fr;
+   width: 100%;
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+   }
+
+   &__tagline {
+      // margin-top: 1.8rem;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 1.2px;
+   }
+
+   &__paragraph {
+      width: 75%;
+      margin-top: 1rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.8;
+   }
+
+   &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         width: 40rem;
+         height: 40rem;
+         border-radius: 100%;
+         overflow: hidden;
+         box-shadow: 0 0 5px $color-brown;
+         transition: all 1.5s;
+
+         .about:hover & {
+            box-shadow: 0 0 2rem $color-brown;
+            transform: scale(1.2) rotate(359deg);
+         }
+      }
+   }
+}

@@ -12,7 +12,21 @@ body {
 .heading-primary {
    font-family: cursive;
    font-weight: 700;
-   font-size: 5rem;
+   font-size: 6rem;
    line-height: 1.6;
+   color: $color-grey-dark3;
+}
+
+.heading-secondary {
+   font-family: cursive;
+   font-weight: 700;
+   font-size: 6rem;
+   color: $color-grey-dark3;
+}
+
+.heading-tertiary {
+   font-family: cursive;
+   font-weight: 700;
+   font-size: 2rem;
    color: $color-grey-dark3;
 }

@@ -1,0 +1,92 @@
+.card-container {
+   display: flex;
+   gap: 12rem;
+   justify-content: center;
+   margin-top: 6rem;
+}
+
+.card {
+   background-color: #fefefe;
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+   width: 22%;
+   text-align: center;
+
+   border: 2px solid $color-coffee;
+   border-radius: 11px;
+
+   &__img {
+      width: 14rem;
+      height: 14rem;
+      margin: 3rem auto 0;
+      overflow: hidden;
+      border-radius: 100%;
+      img {
+         transition: all 0.3s;
+         border-radius: 100%;
+         width: 14rem;
+         height: 14rem;
+         box-shadow: 0 0 3px $color-black;
+
+         .card:hover & {
+            transform: scale(1.2);
+         }
+      }
+   }
+
+   &__type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem;
+      span {
+         margin-bottom: 4px;
+         font-weight: 700;
+         font-size: 1.4rem;
+         color: $color-pink;
+         text-transform: capitalize;
+      }
+
+      svg {
+         height: 2rem;
+         transition: all 0.3s;
+
+         &:first-child {
+            margin-right: 1rem;
+            fill: #222;
+
+            &:hover {
+               fill: red;
+            }
+         }
+      }
+   }
+
+   &__paragraph {
+      padding: 0 1.4rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+   }
+
+   &__btn {
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $color-coffee;
+      color: $color-brown;
+      font-size: 1.2rem;
+      font-weight: 600;
+      box-shadow: 0 0 2px $color-coffee;
+      transition: all 0.3s;
+
+      display: inline-block;
+
+      padding: 1.2rem 2.4rem;
+      border-radius: 22px;
+      margin: 0 auto 3rem;
+
+      &:hover {
+         background-color: $color-pink;
+      }
+   }
+}
