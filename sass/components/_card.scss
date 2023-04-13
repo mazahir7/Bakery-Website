@@ -15,18 +15,25 @@
 
    border: 2px solid $color-coffee;
    border-radius: 11px;
+   transition: all 0.3s;
+
+   &:hover {
+      transform: translateY(-12px);
+   }
 
    &__img {
-      width: 14rem;
-      height: 14rem;
+      width: 16rem;
+      height: 16rem;
       margin: 3rem auto 0;
       overflow: hidden;
-      border-radius: 100%;
+      border-radius: 50%;
+      // border: 1px solid $color-coffee;
+      box-shadow: 0 0 5px $color-grey-dark;
       img {
          transition: all 0.3s;
          border-radius: 100%;
-         width: 14rem;
-         height: 14rem;
+         width: 16rem;
+         height: 16rem;
          box-shadow: 0 0 3px $color-black;
 
          .card:hover & {

@@ -1,0 +1,58 @@
+.footer {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+   &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      img {
+         width: 12rem;
+         height: 4rem;
+      }
+
+      h3 {
+         color: $color-brown;
+      }
+   }
+
+   &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-self: flex-end;
+      h3 {
+         color: $color-brown;
+         font-size: 3rem;
+      }
+      a {
+         text-align: right;
+         color: $color-brown;
+         font-size: 1.4rem;
+         text-decoration: none;
+         text-transform: uppercase;
+         transition: all 0.2s;
+
+         &:hover {
+            color: $color-green;
+         }
+      }
+   }
+
+   &__socials {
+      display: flex;
+      gap: 4rem;
+      svg {
+         transition: all 0.2s;
+         fill: $color-brown;
+         height: 2.4rem;
+
+         &:first-child:hover {
+            fill: red;
+         }
+         &:not(:first-child):hover {
+            fill: rgb(16, 181, 236);
+         }
+      }
+   }
+}

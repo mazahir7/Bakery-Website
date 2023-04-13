@@ -17,6 +17,7 @@
    }
 
    &__paragraph {
+      color: $color-brown;
       width: 75%;
       margin-top: 1rem;
       font-size: 1.6rem;
@@ -37,7 +38,7 @@
          box-shadow: 0 0 5px $color-brown;
          transition: all 1.5s;
 
-         .about:hover & {
+         .section-about:hover & {
             box-shadow: 0 0 2rem $color-brown;
             transform: scale(1.2) rotate(359deg);
          }
