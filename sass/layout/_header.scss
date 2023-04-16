@@ -17,14 +17,19 @@
 
    &__link:link,
    &__link:visited {
+      display: inline-block;
       text-decoration: none;
       font-size: 1.8rem;
       font-weight: 500;
       color: $color-black;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
    }
 
    &__link:hover,
    &__link:active {
+      transform: translateY(-5px);
+
       border-bottom: 2px solid $color-pink;
    }
 }

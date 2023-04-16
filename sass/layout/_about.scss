@@ -10,10 +10,12 @@
    }
 
    &__tagline {
+      color: $color-green;
       // margin-top: 1.8rem;
       font-weight: 700;
       font-size: 2rem;
       letter-spacing: 1.2px;
+      text-shadow: 0 2px $color-black;
    }
 
    &__paragraph {
@@ -23,6 +25,32 @@
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.8;
+   }
+
+   &__btn:link,
+   &__btn:visited {
+      display: inline-block;
+      width: 22rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: $color-coffee;
+      padding: 1.6rem 2.8rem;
+      border-radius: 33px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $color-brown;
+      box-shadow: 0 3px 12px #0000005e;
+      transition: all 0.3s;
+   }
+
+   &__btn:hover {
+      color: $color-coffee;
+      background-color: $color-green;
+   }
+
+   &__btn:active {
+      box-shadow: 0 3px 5px #00000054;
+      transform: translateY(3px);
    }
 
    &__container {

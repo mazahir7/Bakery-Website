@@ -209,7 +209,7 @@ body {
   justify-self: center;
   display: inline-block;
   width: 22rem;
-  height: 4rem;
+  height: 5rem;
   border-radius: 22px;
   color: #7f5539;
   font-family: inherit;
@@ -240,9 +240,11 @@ body {
   gap: 3rem;
 }
 .about__tagline {
+  color: #c9efc7;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 1.2px;
+  text-shadow: 0 2px #000;
 }
 .about__paragraph {
   color: #fcf1dd;
@@ -251,6 +253,28 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8;
+}
+.about__btn:link, .about__btn:visited {
+  display: inline-block;
+  width: 22rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #7f5539;
+  padding: 1.6rem 2.8rem;
+  border-radius: 33px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fcf1dd;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.368627451);
+  transition: all 0.3s;
+}
+.about__btn:hover {
+  color: #7f5539;
+  background-color: #c9efc7;
+}
+.about__btn:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3294117647);
+  transform: translateY(3px);
 }
 .about__container {
   display: flex;
@@ -306,6 +330,7 @@ body {
 }
 .footer__right a:hover {
   color: #c9efc7;
+  transform: translateY(-3px);
 }
 .footer__socials {
   display: flex;
@@ -315,6 +340,9 @@ body {
   transition: all 0.2s;
   fill: #fcf1dd;
   height: 2.4rem;
+}
+.footer__socials svg:hover {
+  transform: translateY(-3px);
 }
 .footer__socials svg:first-child:hover {
   fill: red;
@@ -339,12 +367,16 @@ body {
   margin-right: 2.6rem;
 }
 .header__link:link, .header__link:visited {
+  display: inline-block;
   text-decoration: none;
   font-size: 1.8rem;
   font-weight: 500;
   color: #000;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
 }
 .header__link:hover, .header__link:active {
+  transform: translateY(-5px);
   border-bottom: 2px solid #f08080;
 }
 
@@ -419,22 +451,22 @@ body {
 
 .section-home {
   background-color: #fcf1dd;
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 16rem 2rem 12rem 2rem;
 }
 
 .section-about {
   background-color: #f08080;
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 16rem 2rem 12rem 2rem;
 }
 
 .section-product {
   background-color: #c9efc7;
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 16rem 2rem 12rem 2rem;
 }
 
 .section-order {
   background: linear-gradient(to right, #fcf1dd 30%, #f08080 60%);
-  padding: 12rem 2rem 8rem 2rem;
+  padding: 16rem 2rem 12rem 2rem;
 }
 
 .section-footer {

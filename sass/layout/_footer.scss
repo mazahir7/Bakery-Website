@@ -35,6 +35,7 @@
 
          &:hover {
             color: $color-green;
+            transform: translateY(-3px);
          }
       }
    }
@@ -47,6 +48,9 @@
          fill: $color-brown;
          height: 2.4rem;
 
+         &:hover {
+            transform: translateY(-3px);
+         }
          &:first-child:hover {
             fill: red;
          }
