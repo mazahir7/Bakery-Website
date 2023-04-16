@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $sql = "INSERT INTO orderlist (firstname, lastname, item, phoneno) VALUES ('$fname', '$lname', '$item', '$phoneno')";
 
   if (mysqli_query($conn, $sql)) {
-    echo "Order placed successfully.";
+    header("Location: order.html");
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
